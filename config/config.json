@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "liberty-pages-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/libertyPages/LibertyPagesWebPart.js",
+          "manifest": "./src/webparts/libertyPages/LibertyPagesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js"
+  }
+}
