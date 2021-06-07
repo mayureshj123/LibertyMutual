@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/libertyPages/LibertyPagesWebPart.manifest.json"
         }
       ]
+    },
+    "recommended-articles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/recommendedArticles/RecommendedArticlesWebPart.js",
+          "manifest": "./src/webparts/recommendedArticles/RecommendedArticlesWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js"
+    "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js",
+    "RecommendedArticlesWebPartStrings": "lib/webparts/recommendedArticles/loc/{locale}.js"
   }
 }
