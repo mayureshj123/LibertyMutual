@@ -12,7 +12,21 @@
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": ""
-    }
+    },
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "36146e4b-dc5e-49c7-8f8e-f0f3113ca162",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/liberty-mutual.sppkg"
