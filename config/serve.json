@@ -6,5 +6,29 @@
   "api": {
     "port": 5432,
     "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+  },
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
+      "customActions": {
+        "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "lmAppCustomizer": {
+      "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
+      "customActions": {
+        "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
   }
 }

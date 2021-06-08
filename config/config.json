@@ -25,11 +25,20 @@
           "manifest": "./src/webparts/recommendedArticles/RecommendedArticlesWebPart.manifest.json"
         }
       ]
+    },
+    "lm-app-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/lmAppCustomizer/LmAppCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/lmAppCustomizer/LmAppCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js",
+    "LmAppCustomizerApplicationCustomizerStrings": "lib/extensions/lmAppCustomizer/loc/{locale}.js",
     "TaskListWebpartWebPartStrings": "lib/webparts/taskListWebpart/loc/{locale}.js",
     "RecommendedArticlesWebPartStrings": "lib/webparts/recommendedArticles/loc/{locale}.js"
   }
