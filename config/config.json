@@ -17,11 +17,20 @@
           "manifest": "./src/webparts/taskListWebpart/TaskListWebpartWebPart.manifest.json"
         }
       ]
+    },
+    "recommended-articles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/recommendedArticles/RecommendedArticlesWebPart.js",
+          "manifest": "./src/webparts/recommendedArticles/RecommendedArticlesWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js",
-    "TaskListWebpartWebPartStrings": "lib/webparts/taskListWebpart/loc/{locale}.js"
+    "TaskListWebpartWebPartStrings": "lib/webparts/taskListWebpart/loc/{locale}.js",
+    "RecommendedArticlesWebPartStrings": "lib/webparts/recommendedArticles/loc/{locale}.js"
   }
 }
