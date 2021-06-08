@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/libertyPages/LibertyPagesWebPart.manifest.json"
         }
       ]
+    },
+    "task-list-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/taskListWebpart/TaskListWebpartWebPart.js",
+          "manifest": "./src/webparts/taskListWebpart/TaskListWebpartWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js"
+    "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js",
+    "TaskListWebpartWebPartStrings": "lib/webparts/taskListWebpart/loc/{locale}.js"
   }
 }
