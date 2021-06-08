@@ -7,32 +7,28 @@ import {
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
-import * as strings from 'LibertyPagesWebPartStrings';
-import LibertyPages from './components/LibertyPages';
-import { ILibertyPagesProps } from './components/ILibertyPagesProps';
-import { sp } from "@pnp/sp/presets/all";
-export interface ILibertyPagesWebPartProps {
+import * as strings from 'RecommendedArticlesWebPartStrings';
+import RecommendedArticles from './components/RecommendedArticles';
+import { IRecommendedArticlesProps } from './components/IRecommendedArticlesProps';
+import { sp } from "@pnp/sp/presets/all"; 
+
+export interface IRecommendedArticlesWebPartProps {
   description: string;
 }
-import { SPComponentLoader } from '@microsoft/sp-loader';
 
-export default class LibertyPagesWebPart extends BaseClientSideWebPart<ILibertyPagesWebPartProps> {
-  protected onInit(): Promise<void> {
-    return super.onInit().then(_ => {
-      sp.setup({
-        spfxContext: this.context
-      });
-    });
-  }
-  public constructor() {
-    super();
-    SPComponentLoader.loadCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
-    SPComponentLoader.loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
-    SPComponentLoader.loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js");
-  }
+export default class RecommendedArticlesWebPart extends BaseClientSideWebPart<IRecommendedArticlesWebPartProps> {
+
+  protected onInit(): Promise < void > {  
+    return super.onInit().then(_ => {  
+        sp.setup({  
+            spfxContext: this.context  
+        });  
+    });  
+  } 
+  
   public render(): void {
-    const element: React.ReactElement<ILibertyPagesProps> = React.createElement(
-      LibertyPages,
+    const element: React.ReactElement<IRecommendedArticlesProps> = React.createElement(
+      RecommendedArticles,
       {
         description: this.properties.description
       }
