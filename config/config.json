@@ -10,6 +10,14 @@
         }
       ]
     },
+    "task-list-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/taskListWebpart/TaskListWebpartWebPart.js",
+          "manifest": "./src/webparts/taskListWebpart/TaskListWebpartWebPart.manifest.json"
+        }
+      ]
+    },
     "recommended-articles-web-part": {
       "components": [
         {
@@ -22,6 +30,7 @@
   "externals": {},
   "localizedResources": {
     "LibertyPagesWebPartStrings": "lib/webparts/libertyPages/loc/{locale}.js",
+    "TaskListWebpartWebPartStrings": "lib/webparts/taskListWebpart/loc/{locale}.js",
     "RecommendedArticlesWebPartStrings": "lib/webparts/recommendedArticles/loc/{locale}.js"
   }
 }
