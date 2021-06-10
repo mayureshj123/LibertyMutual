@@ -7,6 +7,7 @@ import { sp } from "@pnp/sp/presets/all";
 import { Web } from '@pnp/sp/webs';
 
 const UserInterestListName = "UserInterestList";
+const TestListName = "Test";
 export default class RecommendedArticles extends React.Component<IRecommendedArticlesProps, IRecommendedArticlesState> {
   constructor(props: IRecommendedArticlesProps){
     super(props);
@@ -47,6 +48,7 @@ export default class RecommendedArticles extends React.Component<IRecommendedArt
     this.getUserObject().then(items => {
       this.getUserInterests(items).then(interests => {
         this.getAllPages(interests).then(pages => {
+          //this.addItem();
            this.setState({
              allPages:pages
            }); 
@@ -65,6 +67,21 @@ export default class RecommendedArticles extends React.Component<IRecommendedArt
     catch(e){
       console.log(e);
     }
+  }
+
+  //Add an item in Test List
+  private addItem = async() =>{
+    try{
+      console.log("Adding an item in test list");
+      const itemAdded: any = await sp.web.lists.getByTitle(TestListName).items.add({
+          Title: "Nishikant" 
+      });
+        console.log("New item addition completed");
+        return itemAdded;
+      }
+      catch(e){
+        console.error(e);
+      }
   }
   
   //Get User Interest based on logged in user
