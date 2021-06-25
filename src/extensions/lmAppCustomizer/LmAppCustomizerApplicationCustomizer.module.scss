@@ -1,3 +1,47 @@
-:global(.modal-backdrop.in){
-  opacity: 0 !important;
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+:global(.modal-backdrop.in) {
+    opacity: 0 !important;
+}
+
+.app {
+    .bottom {
+        //height:40px;
+        text-align: center;
+        line-height: 2.5;
+        //font-weight:bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $ms-color-themePrimary;
+        color: #ffffff;
+        background: #2d2d2d;
+        padding: 10px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        .footer {
+            background: #2d2d2d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: #ffffff
+        }
+        .footerLogo {
+            flex: .5;
+        }
+        .copyright {
+            flex: 1;
+            text-align: center;
+        }
+        .footerSocial {
+            flex: .5;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .footerSocial a {
+            fill: #ffffff;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
 }
