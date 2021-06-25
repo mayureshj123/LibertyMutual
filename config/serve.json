@@ -1,34 +1,36 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
-  "port": 4321,
-  "https": true,
-  "initialPage": "https://localhost:5432/workbench",
-  "api": {
-    "port": 5432,
-    "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
-  },
-  "serveConfigurations": {
-    "default": {
-      "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
-      "customActions": {
-        "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
-          "location": "ClientSideExtension.ApplicationCustomizer",
-          "properties": {
-            "testMessage": "Test message"
-          }
-        }
-      }
+    "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+    "port": 4321,
+    "https": true,
+    "initialPage": "https://localhost:5432/workbench",
+    "api": {
+        "port": 5432,
+        "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
     },
-    "lmAppCustomizer": {
-      "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
-      "customActions": {
-        "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
-          "location": "ClientSideExtension.ApplicationCustomizer",
-          "properties": {
-            "testMessage": "Test message"
-          }
+    "serveConfigurations": {
+        "default": {
+            "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
+            "customActions": {
+                "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "testMessage": "Test message",
+                        "Bottom": "© 2020 Liberty Insurace Pte Ltd. 51 club street #3-00 Liberty House Singapore 069428"
+                    }
+                }
+            }
+        },
+        "lmAppCustomizer": {
+            "pageUrl": "https://sirisrdalabs.sharepoint.com/sites/LibertyMutual/",
+            "customActions": {
+                "9259f892-bc08-4e6f-9eeb-d2e4ed8b0086": {
+                    "location": "ClientSideExtension.ApplicationCustomizer",
+                    "properties": {
+                        "testMessage": "Test message",
+                        "Bottom": "© 2020 Liberty Insurace Pte Ltd. 51 club street #3-00 Liberty House Singapore 069428"
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

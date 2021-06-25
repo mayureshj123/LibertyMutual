@@ -13,6 +13,20 @@
       "termsOfUseUrl": "",
       "mpnId": ""
     },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelSettings.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ChannelMessage.Read.All"
+      }
+    ],
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",
